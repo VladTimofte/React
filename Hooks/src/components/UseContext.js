@@ -6,7 +6,7 @@ function Component1() {
 
 	return (
 		<UserContext.Provider value={user}>
-			<he>useCOntext Hook:</he>
+			<h3>useContext Hook:</h3>
 			<h1>{`Helloooow ${user}!`}</h1>
 			<Component2 user={user} />
 			<hr></hr>
