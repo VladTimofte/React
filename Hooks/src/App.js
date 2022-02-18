@@ -2,6 +2,7 @@ import UseEffect from './components/UseEffect'
 import UseState from './components/UseState'
 import UseRef from './components/UseRef'
 import Card from '@mui/material/Card';
+import UseContext from './components/UseContext'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <UseState />
       <UseEffect />
       <UseRef />
+      <UseContext />
     </Card>
   );
 }
