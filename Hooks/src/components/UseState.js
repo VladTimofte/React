@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import  '../styles/style.css'
 
 function FavoriteColor() {
 	const [color, setColor] = useState("red");
 
 	return (
 		<>
+		<div className="BkgColor">
 			<h3>useState Hook: </h3>
 			<h1>My favorite color is {color}!</h1>
 			<button
@@ -24,6 +26,7 @@ function FavoriteColor() {
 				onClick={() => setColor("green")}
 			>Green</button>
 			<hr></hr>
+		</ div>
 		</>
 	);
 }

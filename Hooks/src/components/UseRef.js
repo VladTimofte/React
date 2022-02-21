@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import '../styles/style.css'
 
 function Ref() {
 	const [inputValue, setInputValue] = useState("");
@@ -15,7 +16,7 @@ function Ref() {
 	});
 
 	return (
-		<>
+		<div className="BkgColor">
 			<h3>useRef hook:</h3>
 			<input
 				type="text"
@@ -27,7 +28,7 @@ function Ref() {
 			<h2>Previous Value: {previousInputValue1.current}</h2>
 			<h1>Render Count: {count.current}</h1>
 			<hr></hr>
-		</>
+		</div>
 	);
 }
 

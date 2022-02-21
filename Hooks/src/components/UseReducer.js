@@ -1,5 +1,6 @@
 import React, { useReducer, useState } from 'react';
 import Todo from './useReducerHelper/Todo'
+import '../styles/style.css'
 
 export const ACTIONS = {
 	ADD_TODO: 'add-todo',
@@ -40,7 +41,7 @@ function Counter(){
 	}
 
 	return(
-		<>
+		<div className="BkgColor">
 		<h3>useReducer Hook:</h3>
 		<form onSubmit={handleSubmit}>
 			<input type="text" placeholder="Type in a TODO" value={name} onChange={e => setName(e.target.value)}/>
@@ -49,7 +50,7 @@ function Counter(){
 			return <Todo key={todo.id} todo={todo} dispatch={dispatch}/>
 		})}
 		<hr></hr>
-		</>
+		</div>
 	)
 }
 
