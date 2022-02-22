@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import classes from './MainHeader.module.css'
 
 const MainHeader = () => {
@@ -7,10 +7,14 @@ const MainHeader = () => {
 			<nav>
 				<ul>
 					<li>
-						<Link to='/welcome'>Welcome</Link>
+						<NavLink to='/welcome'
+							style={({ isActive }) => ({ color: isActive ? '#000000' : '#95bcf0' })}
+						>Welcome</NavLink>
 					</li>
 					<li>
-						<Link to='/products'>Products</Link>
+						<NavLink to='/products'
+							style={({ isActive }) => ({ color: isActive ? '#000000' : '#95bcf0' })}
+						>Products</NavLink>
 					</li>
 				</ul>
 			</nav>
